@@ -1,29 +1,52 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/style.min.css" />
-    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/style.min.css" />
 
-    <meta charset="UTF-8" />
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
     ></script>
+
     <script type="application/ld+json">
       {
         "@context": "http://schema.org",
         "@type": "LocalBusiness",
         "name": "Nina Carducci",
         "image": "https://sanadevv.github.io/oc-projet9/assets/images/nina.webp",
-        "url": "https://www.instagram.com/ninacarducci.photo/?hl=fr"
+        "url": "https://www.instagram.com/ninacarducci.photo/?hl=fr",
+        "telephone": "05 56 67 78 89",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "68 avenue Alsace-Lorraine",
+          "addressLocality": "Bordeaux",
+          "postalCode": "33200"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "10:00",
+            "closes": "19:00"
+          }
+        ]
       }
     </script>
     <script type="application/ld+json">
@@ -36,7 +59,7 @@
           "offers": {
             "@type": "Offer",
             "price": "350",
-            "priceCurrency": "€"
+            "priceCurrency": "EUR"
           }
         },
         {
@@ -47,7 +70,7 @@
           "offers": {
             "@type": "Offer",
             "price": "50",
-            "priceCurrency": "€"
+            "priceCurrency": "EUR"
           }
         },
         {
@@ -58,7 +81,7 @@
           "offers": {
             "@type": "Offer",
             "price": "400",
-            "priceCurrency": "€"
+            "priceCurrency": "EUR"
           }
         }
       ]
@@ -161,7 +184,6 @@
             <div class="carousel-item active">
               <img
                 sizes="
-             
               (max-width: 500px) 500px
               (max-width: 800px)  800px
               (max-width: 1000px) 1000px"
@@ -250,54 +272,63 @@
               class="gallery-item"
               src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp"
               alt="aaron paul"
+              loading="lazy"
             />
             <img
               data-gallery-tag="Entreprises"
               class="gallery-item"
               src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp"
               alt="ali morshedlou"
+              loading="lazy"
             />
             <img
               data-gallery-tag="Entreprises"
               class="gallery-item"
               src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp"
               alt="jason goodman"
+              loading="lazy"
             />
             <img
               data-gallery-tag="Mariages"
               class="gallery-item"
               src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp"
               alt="hannah busing"
+              loading="lazy"
             />
             <img
               data-gallery-tag="Portrait"
               class="gallery-item"
               src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp"
               alt="ade tunji"
+              loading="lazy"
             />
             <img
               data-gallery-tag="Mariages"
               class="gallery-item"
               src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp"
               alt="jakob owens"
+              loading="lazy"
             />
             <img
               data-gallery-tag="Portrait"
               class="gallery-item"
               src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp"
               alt="nino vab prattenburg"
+              loading="lazy"
             />
             <img
               data-gallery-tag="Concert"
               class="gallery-item"
               src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp"
               alt="austin neill"
+              loading="lazy"
             />
             <img
               data-gallery-tag="Entreprises"
               class="gallery-item"
               src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp"
               alt="mateus compos felipe"
+              loading="lazy"
             />
           </div>
         </div>
@@ -400,14 +431,17 @@
             </form>
           </div>
           <div class="picture right">
-            <img src="./assets/images/camera.webp" alt="camera" />
+            <img
+              src="./assets/images/camera.webp"
+              alt="camera"
+              loading="lazy"
+            />
           </div>
         </div>
       </div>
     </footer>
 
-    <script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
-    <script src="./assets/maugallery.min.js"></script>
     <script src="./assets/scripts.min.js"></script>
+    <script src="./assets/maugallery.min.js"></script>
   </body>
 </html>
